@@ -2,7 +2,7 @@
 AI-powered PayPal Dispute Intelligence Platform.
 
 [🚀 Live Demo](https://resolveiq.vercel.app) <!-- Placeholder: Deployed Vercel frontend URL -->
-[🎥 Demo Video](https://www.youtube.com/watch?v=DEMO_VIDEO_PLACEHOLDER) <!-- Placeholder: Record and insert 3-min walkthrough video URL here -->
+[🎥 Demo Video](https://youtu.be/6lxC8qvjsws?si=zUUuXf13cnx-90to) <!-- Placeholder: Record and insert 3-min walkthrough video URL here -->
 [💻 GitHub Repository](https://github.com/PLACEHOLDER/resolveiq) <!-- Placeholder: Insert your actual GitHub repo URL here after pushing -->
 
 ---
