@@ -1,0 +1,35 @@
+# ==============================================================================
+# ResolveIQ Production Docker Compose Configuration
+# ==============================================================================
+version: "3.8"
+
+services:
+  resolveiq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: resolveiq-app
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8000}:8000"
+    env_file:
+      - .env
+    environment:
+      - ENVIRONMENT=production
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DB_PATH=/app/storage/resolveiq.db
+      - UPLOAD_DIR=/app/storage/uploads
+    volumes:
+      # Persistent named volume or host bind-mount for SQLite WAL database & documents
+      - resolveiq-data:/app/storage
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  resolveiq-data:
+    name: resolveiq_storage_data

@@ -1,0 +1,38 @@
+# Environments & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Python Virtual Environments & Caches
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node.js & Frontend Builds
+node_modules/
+frontend/node_modules/
+.vite/
+frontend/.vite/
+
+# Application Storage & SQLite Databases
+storage/
+uploads/
+*.db
+*.db-wal
+*.db-shm
+
+# Test Scratch Workspaces
+test_scratch*/
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
